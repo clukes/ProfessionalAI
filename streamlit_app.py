@@ -2,6 +2,7 @@ import streamlit as st
 import time
 import requests
 
+from training_text import training
 
 def main():
     page_icon = "👩🏾‍💼"
@@ -28,17 +29,6 @@ def main():
     ]
     example = st.selectbox("Choose an example prompt here:", ex_names)
     
-    training = """That sounds like a you problem.\n
-Translation: I believe that falls within your scope of responsibilities, but I'm happy to support where it makes sense.\n
-###\n
-Why didn't you ask me for this sooner?\n
-Translation: Given the tight turnaround, it would have been beneficial to have been looped in on this sooner.\n
-###\n
-Stop emailing me so often.\n
-Translation: To ensure that information does not get lost, let's reduce frequency of communication so that updates are only provided once more details have been established.\n
-###\n
-"""
-    
     inp = st.text_area(
         "Or write your own prompt here:", example, max_chars=2000, height=150
     )
@@ -50,7 +40,7 @@ Translation: To ensure that information does not get lost, let's reduce frequenc
 
     with st.expander("Generation options..."):
         temp = st.slider(
-            "Choose the temperature (Higher is more random, will give you different results on regeneration, lower is more repetitive and can be more accurate).",
+            "Choose the temperature (Higher is more random, will give you different results on regeneration; lower is more repetitive).",
             0.0,
             1.5,
             0.7,
