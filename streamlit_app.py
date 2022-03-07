@@ -11,7 +11,7 @@ def main():
         layout="wide",
         initial_sidebar_state="auto",
         page_title="Professional Speak AI",
-        page_icon="👩🏾‍💼",
+        page_icon=":woman_office_worker_medium_dark_skin_tone:",
         menu_items={
          'About': "# Just for fun.\n"+credits
         }
