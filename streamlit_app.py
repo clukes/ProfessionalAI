@@ -54,7 +54,7 @@ def main():
         if submit_button:
             with st.spinner('Thinking professionally...'):
                 payload = {
-                    "context": training+inp+"\n\nTranslation:",
+                    "context": training+inp+"\nTranslation:",
                     "token_max_length": 100,
                     "temperature": temp,
                     "top_p": 0.9,
