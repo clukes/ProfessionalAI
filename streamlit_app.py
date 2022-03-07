@@ -5,15 +5,14 @@ import requests
 
 def main():
     page_icon = "👩🏾‍💼"
+    credits = "Credit to [vicgalle](https://github.com/vicgalle) for the [GPT-J AI API](https://github.com/vicgalle/gpt-j-api), and [@loewhaley](https://www.tiktok.com/@loewhaley) for the idea and training translations."
     st.set_page_config(
         layout="wide",
         initial_sidebar_state="auto",
         page_title="Professional Speak AI",
         page_icon=page_icon,
         menu_items={
-         'About': """# Just a small idea, made for fun.
-         \nCredit to @[vicgalle] for the AI API, and @[tiktok] for the idea and training translations.
-         """
+         'About': "# Just for fun.\n"+credits
         }
     )
     st.title(page_icon+" Professional Speak AI")
@@ -54,7 +53,7 @@ Translation: To ensure that information does not get lost, let's reduce frequenc
             "Choose the temperature (higher - more random, lower - more repetitive). For the code generation or sentence classification promps it's recommended to use a lower value, like 0.35",
             0.0,
             1.5,
-            1.0 if rec < 2 else 0.35,
+            0.7,
             0.05,
         )
 
@@ -83,7 +82,7 @@ Translation: To ensure that information does not get lost, let's reduce frequenc
                     st.markdown("This website is run for free. You can access the code on github to deploy it yourself, with less restricted limits.")
     st.markdown("""---
     \nMade by [clukes](https://github.com/clukes). View the [source code](https://github.com/clukes/professional_ai).
-    """)
+    \n"""+credits)
 
 if __name__ == "__main__":
     main()
