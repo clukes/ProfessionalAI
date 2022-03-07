@@ -1,12 +1,12 @@
 <div align="center">
   <h1>Professional AI</h1>
   <h6>A WebApp with an AI that takes a normal sentence, and translates it into a more professional sounding one.</h6>
-  <strong><a href="https://share.streamlit.io/clukes/professional_ai">Try the demo</a> • <a href="#about">View screenshots</a></strong>
+  <strong><a href="https://share.streamlit.io/clukes/ProfessionalAI">Try the demo</a> • <a href="#about">View screenshots</a></strong>
 </div>
 
 <div align="center">
   
-[![MIT License](https://img.shields.io/github/license/clukes/professional_ai?style=plastic)](https://github.com/clukes/professional_ai/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/clukes/ProfessionalAI?style=plastic)](https://github.com/clukes/ProfessionalAI/blob/master/LICENSE)
   
 </div>
 
@@ -64,7 +64,7 @@ Training prompts are included in training_text.py.
 
 Different settings or API can be set in streamlit_app.py. Streamlit cloud can be used for free hosting.
 ## Usage
-Go to the [demo page](https://share.streamlit.io/clukes/professional_ai) and enter a prompt. May need to generate multiple times for a better result. However, there is a limit on requests to the API.
+Go to the [demo page](https://share.streamlit.io/clukes/ProfessionalAI) and enter a prompt. May need to generate multiple times for a better result. However, there is a limit on requests to the API.
 
 Example:
 
