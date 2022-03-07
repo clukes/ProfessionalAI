@@ -5,18 +5,17 @@ import requests
 from training_text import training
 
 def main():
-    page_icon = "👩🏾‍💼"
     credits = "Credit to [vicgalle](https://github.com/vicgalle) for the [GPT-J AI API](https://github.com/vicgalle/gpt-j-api), and [@loewhaley](https://www.tiktok.com/@loewhaley) for the idea and training translations."
     st.set_page_config(
         layout="wide",
         initial_sidebar_state="auto",
         page_title="Professional Speak AI",
-        page_icon=":woman_office_worker_medium_dark_skin_tone:",
+        page_icon="💼",
         menu_items={
          'About': "# Just for fun.\n"+credits
         }
     )
-    st.title(page_icon+" Professional Speak AI")
+    st.title("👩🏾‍💼 Professional Speak AI")
     
     st.write("""Enter a sentence and the AI will attempt to make it more professional.
     \nYou can regenerate multiple times for different professional sentences.
