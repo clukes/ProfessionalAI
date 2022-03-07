@@ -34,13 +34,17 @@ Just an idea that was made for fun.
 <details open="open">
   <summary><h3>Screenshots</h3></summary>
   
-Example | Regenerated Example
- --- | ---
-<img src="docs/images/screenshot1.png" title="Demo" width="100%"> | <img src="docs/images/screenshot2.png" title="Demo" width="100%"> |
+Example | 
+--- |
+  <img src="docs/images/screenshot1.png" title="Demo" width="100%"> | 
+  
+Regenerated Example | 
+--- |
+  <img src="docs/images/screenshot2.png" title="Demo" width="100%"> | 
   
 Gif | 
- --- | 
-<img src="docs/images/screenshot.gif" title="Gif" width="100%"> |
+--- |
+  <img src="docs/images/screenshot.gif" title="Gif" width="100%"> |
 
   
 </details>
