@@ -50,7 +50,7 @@ Translation: To ensure that information does not get lost, let's reduce frequenc
 
     with st.expander("Generation options..."):
         temp = st.slider(
-            "Choose the temperature (higher - more random, lower - more repetitive). For the code generation or sentence classification promps it's recommended to use a lower value, like 0.35",
+            "Choose the temperature (Higher is more random, will give you different results on regeneration, lower is more repetitive and can be more accurate).",
             0.0,
             1.5,
             0.7,
